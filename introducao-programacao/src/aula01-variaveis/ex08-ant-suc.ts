@@ -1,6 +1,6 @@
 //Exercício 8 - Antecessor e Sucessor de um número inteiro
 
-function antecessorSucessor(valor: number) {
+function antecessorSucessor(valor: number): [number, number, number] {
   if (!Number.isInteger(valor)) {
     throw new Error("O valor inserido deve ser um número do tipo inteiro");
   }
