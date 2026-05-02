@@ -5,6 +5,6 @@
     "typescript": "^6.0.3"
   },
   "scripts": {
-    "atividade1": "tsx watch src/aula01-variaveis/atividade1.ts"
+    "atividade1": "tsx watch introducao-programacao/src/aula01-variaveis/atividade1.ts"
   }
 }
