@@ -1,6 +1,6 @@
 //Exercício 5 - Reajusta o salário informado após um aumento de 15,3%
 
-function reajusteSalarial(salárioBase: number) {
+function reajusteSalarial(salárioBase: number):number {
   if (salárioBase < 0) {
     throw new Error("O valor base de um salário não pode ser negativo");
   }
