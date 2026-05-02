@@ -8,4 +8,6 @@ function areaRetangulo(largura: number, altura: number): number {
   return largura * altura;
 }
 
-console.log(`A área do retângulo é : ${areaRetangulo(10.6, 20)}`);
+const areaCalculada = areaRetangulo(10.6, 20)
+
+console.log(`A área do retângulo é : ${areaCalculada}`);

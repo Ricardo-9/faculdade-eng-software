@@ -1,7 +1,9 @@
 //Exercício 1 - Soma de dois valores
 
-function somar(a: number, b: number):number {
+function somar(a: number, b: number): number {
   return a + b;
 }
 
-console.log(`A soma é : ${somar(2, 8)}`);
+const somaCalculada = somar(2, 8);
+
+console.log(`A soma é : ${somaCalculada}`);

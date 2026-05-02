@@ -24,11 +24,11 @@ Cidade: ${cidade}
 `;
 }
 
-console.log(
-  formatarDadosPessoais({
-    nome: "Ricardo",
-    idade: 18,
-    altura: 1.83,
-    cidade: "Barro",
-  }),
-);
+const dadosDoUsuario = formatarDadosPessoais({
+  nome: "Ricardo",
+  idade: 18,
+  altura: 1.83,
+  cidade: "Barro",
+});
+
+console.log(dadosDoUsuario);

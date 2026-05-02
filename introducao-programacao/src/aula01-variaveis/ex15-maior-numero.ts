@@ -12,4 +12,6 @@ function compararDoisNumeros(a: number, b: number): string {
   return `${a} e ${b} são iguais`;
 }
 
-console.log(compararDoisNumeros(7, 7));
+const resultadoDaComparacao = compararDoisNumeros(7, 7);
+
+console.log(resultadoDaComparacao);

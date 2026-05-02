@@ -1,6 +1,6 @@
 //Exercício 6 - Desconto de 10% no valor de um produto
 
-function descontoDeDezPorcento(valorBase: number):number {
+function descontoDeDezPorcento(valorBase: number): number {
   if (valorBase < 0) {
     throw new Error("O valor base não pode ser negativo");
   }
@@ -8,4 +8,6 @@ function descontoDeDezPorcento(valorBase: number):number {
   return valorBase * 0.9;
 }
 
-console.log(`O valor com desconto é: ${descontoDeDezPorcento(100)}`);
+const valorComDesconto = descontoDeDezPorcento(100);
+
+console.log(`O valor com desconto é: ${valorComDesconto}`);

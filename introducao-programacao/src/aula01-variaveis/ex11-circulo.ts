@@ -8,4 +8,6 @@ function areaCirculo(raio: number): number {
   return (3.14 * raio) ^ 2;
 }
 
-console.log(`A área do círculo é : ${areaCirculo(6)}`);
+const areaCalculada = areaCirculo(6);
+
+console.log(`A área do círculo é : ${areaCalculada}`);

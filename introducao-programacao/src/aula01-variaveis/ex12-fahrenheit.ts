@@ -4,4 +4,6 @@ function celsiusEmFahrenheit(medidaEmCelsius: number): number {
   return (medidaEmCelsius * 9) / 5 + 32;
 }
 
-console.log(`A medida em Fahrenheit é : ${celsiusEmFahrenheit(10)}`);
+const resultadoConversao = celsiusEmFahrenheit(10);
+
+console.log(`A medida em Fahrenheit é : ${resultadoConversao}`);
