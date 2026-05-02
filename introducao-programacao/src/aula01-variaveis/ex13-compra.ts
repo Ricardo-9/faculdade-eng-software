@@ -1,13 +1,32 @@
 //Exercício 13 - Calcula o preço de uma compra com base na quantidade e preço unitário
 
-function valorDaCompra(quantidade: number, preçoUnitário: number): number {
-  if (quantidade < 0 || preçoUnitário < 0) {
-    throw new Error(
-      "A quantidade ou o preço unitário não podem assumir valores negativos",
-    );
+type Compra = {
+  nome: string;
+  quantidade: number;
+  precoUnitario: number;
+};
+
+type ResultadoCompra = {
+  nome: string;
+  total: number;
+};
+
+function calcularValorDaCompra({
+  nome,
+  quantidade,
+  precoUnitario,
+}: Compra): ResultadoCompra {
+  if (quantidade < 0 || precoUnitario < 0) {
+    throw new Error("Quantidade e preço devem ser não negativos");
   }
 
-  return quantidade * preçoUnitário;
+  return { nome, total: quantidade * precoUnitario };
 }
 
-console.log(`O preço total é : ${valorDaCompra(12, 24.6)}`);
+const compra = calcularValorDaCompra({
+  nome: "Batatas",
+  quantidade: 12,
+  precoUnitario: 1.2,
+});
+
+console.log(`O valor da compra de ${compra.nome} é R$ ${compra.total}`);
