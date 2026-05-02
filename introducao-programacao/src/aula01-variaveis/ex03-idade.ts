@@ -1,6 +1,6 @@
 //Exercício 3 - Cáculo aproximado da idade do usuário com base no ano de nascimento
 
-function calcularIdade(dataDeNascimento: number, anoAtual?: number): number {
+export default function calcularIdade(dataDeNascimento: number, anoAtual?: number): number {
   const dataAtual = anoAtual ?? new Date().getFullYear();
 
   if (!Number.isInteger(dataDeNascimento) || !Number.isInteger(dataAtual)) {
@@ -15,8 +15,8 @@ function calcularIdade(dataDeNascimento: number, anoAtual?: number): number {
 
 //O parãmetro de ano atual é opcional, caso não seja definido manualmente pelo usuário, será calculado internamente pela função
 
-const idadeExemplo1 = calcularIdade(2008, 2026);
-const idadeExemplo2 = calcularIdade(2008);
+// const idadeExemplo1 = calcularIdade(2008, 2026);
+// const idadeExemplo2 = calcularIdade(2008);
 
-console.log(`A idade é : ${idadeExemplo1}`);
-console.log(`A idade é : ${idadeExemplo2}`);
+// console.log(`A idade é : ${idadeExemplo1}`);
+// console.log(`A idade é : ${idadeExemplo2}`);

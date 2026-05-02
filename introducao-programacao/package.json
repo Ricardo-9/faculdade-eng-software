@@ -3,5 +3,8 @@
     "@types/node": "^25.6.0",
     "tsx": "^4.21.0",
     "typescript": "^6.0.3"
+  },
+  "scripts": {
+    "atividade1": "tsx watch src/aula01-variaveis/atividade1.ts"
   }
 }

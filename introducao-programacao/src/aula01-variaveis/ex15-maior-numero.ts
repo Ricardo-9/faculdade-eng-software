@@ -1,6 +1,6 @@
 //Exercício 15 - Compare dois números e mostre entre eles, o menor e o maior
 
-function compararDoisNumeros(a: number, b: number): string {
+export default function compararDoisNumeros(a: number, b: number): string {
   if (a > b) {
     return `${a} é maior que ${b}`;
   }
@@ -12,6 +12,6 @@ function compararDoisNumeros(a: number, b: number): string {
   return `${a} e ${b} são iguais`;
 }
 
-const resultadoDaComparacao = compararDoisNumeros(7, 7);
+// const resultadoDaComparacao = compararDoisNumeros(7, 7);
 
-console.log(resultadoDaComparacao);
+// console.log(resultadoDaComparacao);

@@ -5,7 +5,7 @@ type Compra = {
   quantidade: number;
 };
 
-function calcularValorTotal({ precoUnitario, quantidade }: Compra): number {
+export default function calcularValorTotal({ precoUnitario, quantidade }: Compra): number {
   if (precoUnitario < 0 || quantidade < 0) {
     throw new Error("Os valores inseridos devem ser números não negativos");
   }
@@ -13,9 +13,9 @@ function calcularValorTotal({ precoUnitario, quantidade }: Compra): number {
   return precoUnitario * quantidade;
 }
 
-const valorDaCompra = calcularValorTotal({
-  precoUnitario: 13.4,
-  quantidade: 20,
-});
+// const valorDaCompra = calcularValorTotal({
+//   precoUnitario: 13.4,
+//   quantidade: 20,
+// });
 
-console.log(`O valor total da compra é : ${valorDaCompra}`);
+// console.log(`O valor total da compra é : ${valorDaCompra}`);

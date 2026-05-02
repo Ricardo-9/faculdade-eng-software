@@ -5,14 +5,14 @@ type nomeNumero = {
   telefone: string;
 };
 
-function formatarNomeNumero({ nome, telefone }: nomeNumero): string {
+export default function formatarNomeNumero({ nome, telefone }: nomeNumero): string {
   return `nome: ${nome},
 telefone: +${telefone}`;
 }
 
-const dadosFormatados = formatarNomeNumero({
-  nome: "Ricardo",
-  telefone: "88999891052",
-});
+// const dadosFormatados = formatarNomeNumero({
+//   nome: "Ricardo",
+//   telefone: "88999891052",
+// });
 
-console.log(dadosFormatados);
+// console.log(dadosFormatados);

@@ -5,7 +5,7 @@ type DadosDoAluno = {
   matricula: string;
 };
 
-function confirmacaoMatricula({ nome, matricula }: DadosDoAluno): string {
+export default function confirmacaoMatricula({ nome, matricula }: DadosDoAluno): string {
   if (!/^\d{6}$/.test(matricula)) {
     throw new Error("Matrícula deve conter exatamente 6 dígitos numéricos");
   }
@@ -13,9 +13,9 @@ function confirmacaoMatricula({ nome, matricula }: DadosDoAluno): string {
   return `Dados do aluno ${nome} confirmados`;
 }
 
-const checagemAluno = confirmacaoMatricula({
-  nome: "Ricardo",
-  matricula: "005678",
-});
+// const checagemAluno = confirmacaoMatricula({
+//   nome: "Ricardo",
+//   matricula: "005678",
+// });
 
-console.log(checagemAluno);
+// console.log(checagemAluno);

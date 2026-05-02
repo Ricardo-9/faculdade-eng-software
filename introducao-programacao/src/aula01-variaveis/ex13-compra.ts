@@ -11,7 +11,7 @@ type ResultadoCompra = {
   total: number;
 };
 
-function calcularValorDaCompra({
+export default function calcularValorDaCompra({
   nome,
   quantidade,
   precoUnitario,
@@ -23,10 +23,10 @@ function calcularValorDaCompra({
   return { nome, total: quantidade * precoUnitario };
 }
 
-const compra = calcularValorDaCompra({
-  nome: "Batatas",
-  quantidade: 12,
-  precoUnitario: 1.2,
-});
+// const compra = calcularValorDaCompra({
+//   nome: "Batatas",
+//   quantidade: 12,
+//   precoUnitario: 1.2,
+// });
 
-console.log(`O valor da compra de ${compra.nome} é R$ ${compra.total}`);
+// console.log(`O valor da compra de ${compra.nome} é R$ ${compra.total}`);

@@ -1,9 +1,9 @@
 // Conversão de temperatura de Celsius para Fahrenheit
 
-function celsiusEmFahrenheit(medidaEmCelsius: number): number {
+export default function celsiusEmFahrenheit(medidaEmCelsius: number): number {
   return (medidaEmCelsius * 9) / 5 + 32;
 }
 
-const resultadoConversao = celsiusEmFahrenheit(10);
+// const resultadoConversao = celsiusEmFahrenheit(10);
 
-console.log(`A medida em Fahrenheit é : ${resultadoConversao}`);
+// console.log(`A medida em Fahrenheit é : ${resultadoConversao}`);

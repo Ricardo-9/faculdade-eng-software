@@ -1,6 +1,6 @@
 //Exercício 16 - divisão entre dois números inteiros
 
-function divisaoDeDoisNumeros(a: number, b: number): number {
+export default function divisaoDeDoisNumeros(a: number, b: number): number {
   if (!Number.isInteger(a) || !Number.isInteger(b)) {
     throw new Error("Os valores inseridos devem ser números do tipo inteiro");
   }
@@ -8,6 +8,6 @@ function divisaoDeDoisNumeros(a: number, b: number): number {
   return a / b;
 }
 
-const resultadoDivisao = divisaoDeDoisNumeros(3, 2);
+// const resultadoDivisao = divisaoDeDoisNumeros(3, 2);
 
-console.log(`Resultado: ${resultadoDivisao}`);
+// console.log(`Resultado: ${resultadoDivisao}`);

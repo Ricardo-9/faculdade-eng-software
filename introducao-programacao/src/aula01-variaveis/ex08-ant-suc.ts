@@ -1,6 +1,6 @@
 //Exercício 8 - Antecessor e Sucessor de um número inteiro
 
-function antecessorSucessor(valor: number): [number, number, number] {
+export default function antecessorSucessor(valor: number): [number, number, number] {
   if (!Number.isInteger(valor)) {
     throw new Error("O valor inserido deve ser um número do tipo inteiro");
   }
@@ -8,8 +8,8 @@ function antecessorSucessor(valor: number): [number, number, number] {
   return [valor - 1, valor, valor + 1];
 }
 
-const [antecessor, valorBase, sucessor] = antecessorSucessor(10);
+// const [antecessor, valorBase, sucessor] = antecessorSucessor(10);
 
-console.log(
-  `Número : ${valorBase}, Antecessor: ${antecessor}, Sucessor: ${sucessor}`,
-);
+// console.log(
+//   `Número : ${valorBase}, Antecessor: ${antecessor}, Sucessor: ${sucessor}`,
+// );
