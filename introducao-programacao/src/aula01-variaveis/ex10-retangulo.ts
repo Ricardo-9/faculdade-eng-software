@@ -1,0 +1,11 @@
+//Exercício 10 - calcula a área de um retângulo
+
+function areaRetangulo(largura: number, altura: number): number {
+  if (largura < 0 || altura < 0) {
+    throw new Error("As medidas não podem ser negativas");
+  }
+
+  return largura * altura;
+}
+
+console.log(`A área do retângulo é : ${areaRetangulo(10.6, 20)}`);
